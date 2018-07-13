@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import UserInput from './UserInput/UserInput';
+import SubmitButton from './SubmitButton/SubmitBut';
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
@@ -9,14 +13,18 @@ class App extends Component {
           <h1> Movie Store</h1>
         </header>
         <section>
-        <p className="App-intro">
-
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <p className="App-intro">
+            See the latest vidoes in this app
+          </p>
 
         </section>
-       
-        <button className="btn btn-primary">Submit Here</button>
+        <div className="col-md-3 ">
+          <UserInput />
+          <SubmitButton />
+        </div>
+        <div className="col-md-7">
+          
+        </div>
       </div>
     );
   }
