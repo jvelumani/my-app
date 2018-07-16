@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import './Movie/MovieDisplay.css';
 
-import UserInput from './UserInput/UserInput';
-import SubmitButton from './SubmitButton/SubmitBut';
+import MyMovies from './Movie/MovieDisplay'
 class App extends Component {
 
-
+  
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
@@ -18,12 +19,11 @@ class App extends Component {
           </p>
 
         </section>
-        <div className="col-md-3 ">
-          <UserInput />
-          <SubmitButton />
-        </div>
-        <div className="col-md-7">
-          
+        <div id ="movieWrapper" className="col-md-12">
+           <MyMovies name ={"Theri"} movieImage={"movie image"} movieYear={"1987"} movieDis={"disc"}/>
+           <MyMovies name ={"Kali"} movieImage={"movie image"} movieYear={"1990"} movieDis={"disc here"}/>
+           <MyMovies name ={"Gajini"} movieImage={"movie oiuoiuoi"} movieYear={"2000"} movieDis={"disc here"}/>
+           <MyMovies name ={"Singam"} movieImage={"movie oiuoiuoi"} movieYear={"2010"} movieDis={"disc here"}/>
         </div>
       </div>
     );
