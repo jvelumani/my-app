@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './Movie/MovieDisplay.css';
 
-import MyMovies from './Movie/MovieDisplay';
-import AddMovies from './Movies/AddMovie/addMovie';
-import MoreMovies from './Movies/LoadMovie/moreMovie';
+import MyMovies from './Movie/MovieDisplay'
 class App extends Component {
 
   state = {
@@ -34,12 +32,6 @@ class App extends Component {
 
         
         </section>
-		
-		<div id="movieControls" className="col-md-12">
-			<MoreMovies />
-			<AddMovies />
-		
-		</div>
        
       </div>
     );
