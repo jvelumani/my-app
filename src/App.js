@@ -5,7 +5,13 @@ import './Movie/MovieDisplay.css';
 import MyMovies from './Movie/MovieDisplay'
 class App extends Component {
 
-  
+  state = {
+    name :["Kabali", "Kali", "Kabli 2", "Kali2","Kali4"],
+    movieImage:["moveimage","movieimage1", "movieimage1", "movieimage1", "movieimage1"],
+    movieYear:["1999","2000","2001","2002","2003","2004","2005"]
+  }
+
+
   render() {
 
     return (
@@ -17,14 +23,16 @@ class App extends Component {
           <p className="App-intro">
             See the latest vidoes in this app
           </p>
-
-        </section>
-        <div id ="movieWrapper" className="col-md-12">
-           <MyMovies name ={"Theri"} movieImage={"movie image"} movieYear={"1987"} movieDis={"disc"}/>
-           <MyMovies name ={"Kali"} movieImage={"movie image"} movieYear={"1990"} movieDis={"disc here"}/>
-           <MyMovies name ={"Gajini"} movieImage={"movie oiuoiuoi"} movieYear={"2000"} movieDis={"disc here"}/>
-           <MyMovies name ={"Singam"} movieImage={"movie oiuoiuoi"} movieYear={"2010"} movieDis={"disc here"}/>
+          <div id="movieWrapper" className="col-md-12">
+          <MyMovies name={this.state.name[0]} movieImage={this.state.movieImage[0]} movieYear={this.state.movieYear[0]} movieDis={"disc"} />
+          <MyMovies name={this.state.name[1]} movieImage={this.state.movieImage[1]} movieYear={this.state.movieYear[1]}  movieDis={"disc here"} />
+          <MyMovies name={this.state.name[2]} movieImage={this.state.movieImage[2]}  movieYear={this.state.movieYear[2]} movieDis={"disc here"} />
+          <MyMovies name={this.state.name[3]} movieImage={this.state.movieImage[3]}  movieYear={this.state.movieYear[3]} movieDis={"disc here"} />
         </div>
+
+        
+        </section>
+       
       </div>
     );
   }
