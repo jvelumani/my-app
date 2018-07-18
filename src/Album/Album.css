@@ -1,0 +1,13 @@
+.post-wrap{
+    border: 1px soli #ccc;
+    background: rgb(247, 246, 246);
+    padding: 20px;
+    margin: 10px auto;
+    width: 800px;
+    text-align: left;
+}
+.post-wrap h4{
+    font-style: italic;
+    color:rgb(226, 178, 111);
+    font-weight: 200;
+}

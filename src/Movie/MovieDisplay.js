@@ -1,20 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-class MyMovies extends React.Component{
+class MovieDisplay extends Component {
 
-    
 
-    render(){
-        console.log(this.props)
-        return(
-           
-            <div className="movieWrap col-md-2">
-                <h1>{this.props.movieitems}</h1>
-               
-            </div>
-        
-        )
-    }
+  render() {
+    return (
+      <div>
+        <p>here is the move display</p>
+      </div>
+    )
+  }
 }
-export default MyMovies;
 
+export default MovieDisplay
