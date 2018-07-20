@@ -10,49 +10,49 @@ class MovieDisplay extends Component {
         {
           id: 1,
           name: "kabali",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         },
         {
           id: 2,
           name: "kabali2",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         },
         {
           id: 3,
           name: "kabali3",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         }
         , {
           id: 4,
           name: "Captain",
-          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
+          movieImage: '../images/kabali.png',
           movieYear: 2009
 
         }
@@ -61,13 +61,13 @@ class MovieDisplay extends Component {
 
     }
 
-    
+
   }
 
 showContent(id) {
   // merge new value with existing visibility status into new object
   this.setState({
-    isItemContentVisible: {     
+    isItemContentVisible: {
       ...this.state.isItemContentVisible,
       [id]: true
     }
@@ -87,7 +87,7 @@ showContent(id) {
 
     ))
     return (
-     
+
       <div>
         <p>here is the move display</p>
         {alubmItems}
@@ -99,4 +99,4 @@ showContent(id) {
   }
 }
 
-export default MovieDisplay 
+export default MovieDisplay
