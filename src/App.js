@@ -4,8 +4,6 @@ import './Movie/MovieDisplay.css';
 import './Album/Album.css'
 
 import MovieDisplay from './Movie/MovieDisplay';
-import AddMovies from './Movies/AddMovie/addMovie';
-import MoreMovies from './Movies/LoadMovie/moreMovie';
 import PhotoAlubm from './Album/PhotoAlubm'
 class App extends Component {
 
@@ -21,19 +19,12 @@ class App extends Component {
             See the latest vidoes in this app
           </p>
           <div id="movieWrapper" className="col-md-12 ">
-            <MovieDisplay/>
+            <MovieDisplay />
           </div>
 
-        </section>
-		
-		<div id="movieControls" className="col-md-12">
-			<MoreMovies />
-			<AddMovies />
-		
-		</div>
+          <PhotoAlubm />
 
-     <PhotoAlubm/>
-       
+        </section>
       </div>
     );
   }

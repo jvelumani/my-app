@@ -15,3 +15,10 @@
     margin: 5px;
     background: rgb(241, 241, 241)
 }
+.movie-item img {
+    width: 150px;
+    transition: 0.10s;
+}
+.movie-item img:hover{
+   width:155px;
+}

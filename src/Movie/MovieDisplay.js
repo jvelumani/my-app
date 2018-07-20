@@ -10,57 +10,69 @@ class MovieDisplay extends Component {
         {
           id: 1,
           name: "kabali",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         },
         {
           id: 2,
           name: "kabali2",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         },
         {
           id: 3,
           name: "kabali3",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         }
         , {
           id: 4,
           name: "Captain",
-          movieImage: "images1",
+          movieImage: require('/Users/velumanijayaraman/my-app/src/images/kabali.png'),
           movieYear: 2009
 
         }
-      ]
+      ], isItemContentVisible :{},
+      item:[]
 
     }
+
+    
   }
 
+showContent(id) {
+  // merge new value with existing visibility status into new object
+  this.setState({
+    isItemContentVisible: {     
+      ...this.state.isItemContentVisible,
+      [id]: true
+    }
+  });
+}
 
   render() {
 
@@ -69,7 +81,7 @@ class MovieDisplay extends Component {
 
       <div className="col-md-2 movie-item" key={post.id}>
         <h4>{post.name}</h4>
-        <p>{post.movieImage}</p>
+        <img src={post.movieImage} alt=""/>
         <span>{post.movieYear}</span>
       </div>
 
@@ -77,9 +89,11 @@ class MovieDisplay extends Component {
     return (
      
       <div>
-        
         <p>here is the move display</p>
         {alubmItems}
+       <div>
+           <button  onClick={() => this.showContent()} className="btn btn-success">More Movies</button>
+        </div>
       </div>
     )
   }
