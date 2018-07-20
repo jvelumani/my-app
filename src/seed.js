@@ -1,6 +1,6 @@
 window.seed = (function(){
 
-    const movieitems = [
+    const MovieItem = [
 
         {
             id :1,
@@ -32,7 +32,7 @@ window.seed = (function(){
         }
     ]
     // 
-    return {movieitems: movieitems}
+    return {MovieItem: MovieItem}
 
 }());
 

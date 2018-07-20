@@ -20,7 +20,7 @@ class App extends Component {
           <p className="App-intro">
             See the latest vidoes in this app
           </p>
-          <div id="movieWrapper" className="col-md-12">
+          <div id="movieWrapper" className="col-md-12 ">
             <MovieDisplay/>
           </div>
 
