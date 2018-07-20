@@ -5,7 +5,7 @@ class AddMovies extends React.Component{
     render(){
         return(
             <div className="addMovie movieActionButtons">
-				<button className="primary">Add Movie</button>
+				<button className="btn btn-primary">Add Movie</button>
             </div>
         
         )
