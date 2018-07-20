@@ -16,7 +16,8 @@ class PhotoAlubm extends Component {
            
     }
     render() {
-        const alubmItems = this.state.album.map(post => (
+        let size = 6;
+        const alubmItems = this.state.album.slice(0,size).map(post => (
             <div className="post-wrap" key={post.id}>
                 <h4>{post.title}</h4>
                 <p>{post.body}</p>
@@ -32,6 +33,7 @@ class PhotoAlubm extends Component {
                 
                 <h1>Display Posts </h1>
                 {alubmItems}
+                <button className="btn btn-danger">See all post</button>
             </div>
         )
     }

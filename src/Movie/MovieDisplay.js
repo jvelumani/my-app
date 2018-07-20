@@ -64,8 +64,8 @@ class MovieDisplay extends Component {
 
   render() {
 
-    let size = 4;
-    const alubmItems = this.state.videos.slice(0, size).map(post => (
+    let size = 3;
+    const alubmItems = this.state.videos.slice(0, size).map((post, index) => (
 
       <div className="col-md-2 movie-item" key={post.id}>
         <h4>{post.name}</h4>
@@ -75,7 +75,9 @@ class MovieDisplay extends Component {
 
     ))
     return (
+     
       <div>
+        
         <p>here is the move display</p>
         {alubmItems}
       </div>

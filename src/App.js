@@ -24,7 +24,6 @@ class App extends Component {
             <MovieDisplay/>
           </div>
 
-       
         </section>
 		
 		<div id="movieControls" className="col-md-12">
