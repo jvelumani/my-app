@@ -7,58 +7,58 @@ class MovieDisplay extends React.Component {
         {
           id: 1,
           name: "kabali",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kala.png'),
           movieYear: 2009
         },
         {
           id: 2,
           name: "kabali2",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kabali.png'),
           movieYear: 2009
         },
         {
           id: 3,
           name: "kabali3",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kala.png'),
           movieYear: 2009
         },
         {
           id: 4,
           name: "Captain",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kabali.png'),
           movieYear: 2009
         },
         {
           id: 5,
           name: "Captain",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kabali.png'),
           movieYear: 2009
         },
         {
           id: 6,
           name: "Captain",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kabali.png'),
           movieYear: 2009
         },
         {
           id: 7,
           name: "Captain",
-          movieImage: "../images/kabali.png",
+          movieImage: require('../images/kabali.png'),
           movieYear: 2009
         }
       ],
-      isItemContentVisible: {},
-      item: [],
+      
       size: 3
     };
   }
   handleSize = () => {
     this.setState({
-      size: this.state.size + 3
+      size: this.state.size + 1
     });
   };
   render() {
     let items = this.state.videos.slice(0, this.state.size);
+    console.log(items)
     const alubmItems = items.map((post, index) => (
       <div className="col-md-2 movie-item" key={post.id}>
         <h4>{post.name}</h4>

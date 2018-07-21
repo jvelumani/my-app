@@ -17,8 +17,11 @@
 }
 .movie-item img {
     width: 150px;
-    transition: 0.10s;
+    transition: all .2s ease-in-out;
+    height: 200px;
 }
 .movie-item img:hover{
    width:155px;
+   transform: scale(1.2);
+   
 }

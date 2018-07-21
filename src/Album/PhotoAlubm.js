@@ -20,9 +20,10 @@ class PhotoAlubm extends Component {
     loadMorePost(){
         // this.setState({album:[...this.state.album, morePost]})
         // console.log(this.setState(album:[]));
-       console.log()
+      
         
     }
+    
     render() {
         let size = 6;
         const alubmItems = this.state.album.slice(0,size).map(post => (
@@ -32,7 +33,7 @@ class PhotoAlubm extends Component {
                 <span>{post.userId}</span>
             </div> 
         ))
-
+       
         return (
             
             <div>
