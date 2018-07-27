@@ -78,6 +78,7 @@ class MovieDisplay extends React.Component {
           />
         </div>
       </div>
+     
     );
   }
 }
