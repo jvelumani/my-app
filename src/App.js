@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import './Movie/MovieDisplay.css';
 import './Album/Album.css'
+import './Register/Register.css'
 
 import MovieDisplay from './Movie/MovieDisplay';
 import PhotoAlubm from './Album/PhotoAlubm'
+import Register from './Register/Register'
 class App extends Component {
 
   render() {
@@ -13,8 +15,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1> Movie Store</h1>
+         
         </header>
+
         <section>
+        <Register/>
           <p className="App-intro">
             See the latest vidoes in this app
           </p>
