@@ -7,6 +7,7 @@ import './Register/Register.css'
 import MovieDisplay from './Movie/MovieDisplay';
 import PhotoAlubm from './Album/PhotoAlubm'
 import Register from './Register/Register'
+import Location from './Location/Location'
 class App extends Component {
 
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1> Movie Store</h1>
-         
+          <Location/>
         </header>
 
         <section>

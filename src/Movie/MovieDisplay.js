@@ -51,14 +51,17 @@ class MovieDisplay extends React.Component {
       size: 3
     };
   }
+  
   handleSize = () => {
     this.setState({
       size: this.state.size + 1
     });
   };
   render() {
+   
     let items = this.state.videos.slice(0, this.state.size);
-    console.log(items)
+    // console.log(items)
+   
     const alubmItems = items.map((post, index) => (
       <div className="col-md-2 movie-item" key={post.id}>
         <h4>{post.name}</h4>

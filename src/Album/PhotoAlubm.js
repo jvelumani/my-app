@@ -8,7 +8,9 @@ class PhotoAlubm extends Component {
             // activeIndex:0
             album: [],
             size:5
+            
         }
+        
     }
     componentDidMount() {
 
@@ -31,19 +33,21 @@ class PhotoAlubm extends Component {
     }
 
     render() {
-        
+       
         const postItems = this.state.album.slice(0, this.state.size).map(post => (
             <div className="post-wrap" key={post.id}>
                 <h4>{post.title}</h4>
                 <p>{post.body}</p>
                 <span>{post.userId}</span>
             </div>
-        ))
 
+            
+        ))
+       
         return (
 
             <div>
-
+                
                 <h1>Display Posts </h1>
                 {postItems}
                 <MorePost 
