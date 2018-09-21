@@ -7,22 +7,19 @@ import React, { Component } from 'react'
             Location:[]
          }
      }
-     componentDidMount(){
-       
-     }
-     changecity =()=>{
-        fetch('https://gist.githubusercontent.com/ebaranov/41bf38fdb1a2cb19a781/raw/fb097a60427717b262d5058633590749f366bd80/gistfile1.json')
+     findMatch =()=>{
+        fetch('https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json')
             .then(Response => Response.json())
             .then(data => this.setState({Location:data}))
-        console.table(this.state.Location.countries)
+            console.table(this.state.Location)
      }
   render() {
-
+      
     
     return (
       <div>
         <label>Location </label> 
-        <input onChange={this.changecity} type="text"/>
+        <input onChange={this.findMatch} type="text"/>
       </div>
     )
   }

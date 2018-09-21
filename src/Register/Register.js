@@ -18,7 +18,7 @@ class Register extends Component {
                 <form className="form-horizontal">
 
                         <div className="form-group">
-							<label for="name" className="cols-sm-2 control-label">First Name</label>
+							<label htmlFor="name" className="cols-sm-2 control-label">First Name</label>
 							<div className="cols-sm-10">
 								<div className="input-group">
 									<span className="input-group-addon"><i className="fa fa-user fa" aria-hidden="true"></i></span>
@@ -28,7 +28,7 @@ class Register extends Component {
 						</div>
 
                          <div className="form-group">
-							<label for="name" className="cols-sm-2 control-label">Last Name</label>
+							<label htmlFor="name" className="cols-sm-2 control-label">Last Name</label>
 							<div className="cols-sm-10">
 								<div className="input-group">
 									<span className="input-group-addon"><i className="fa fa-user fa" aria-hidden="true"></i></span>
@@ -38,7 +38,7 @@ class Register extends Component {
 						</div>
                    
                         <div className="form-group">
-							<label for="name" className="cols-sm-2 control-label">Email ID</label>
+							<label htmlFor="name" className="cols-sm-2 control-label">Email ID</label>
 							<div className="cols-sm-10">
 								<div className="input-group">
 									<span className="input-group-addon"><i className="fa fa-user fa" aria-hidden="true"></i></span>
@@ -47,7 +47,7 @@ class Register extends Component {
 							</div>
 						</div>
                         <div className="form-group">
-							<label for="name" className="cols-sm-2 control-label">Password</label>
+							<label htmlFor="name" className="cols-sm-2 control-label">Password</label>
 							<div className="cols-sm-10">
 								<div className="input-group">
 									<span className="input-group-addon"><i className="fa fa-user fa" aria-hidden="true"></i></span>
@@ -56,7 +56,7 @@ class Register extends Component {
 							</div>
 						</div>
                         <div className="form-group">
-							<label for="name" className="cols-sm-2 control-label">Password</label>
+							<label htmlFor="name" className="cols-sm-2 control-label">Password</label>
 							<div className="cols-sm-10">
 								<div className="input-group">
 									<span className="input-group-addon"><i className="fa fa-user fa" aria-hidden="true"></i></span>
